@@ -18,12 +18,7 @@ try:
                    'retryWrites=true&w=majority'  # get connection url from environment
 
     mongo = pymongo.MongoClient(DATABASE_URL)  # establish connection with database
-'''
-    mongo = pymongo.MongoClient(
-        host="localhost",
-        port= 27017
-    )
-    '''
+
     db = mongo.d_store6
     mongo.server_info()
 except:
